@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tonight — VIP Connect</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap');
+    @media only screen and (max-width: 600px) {
+      .container { width: 100% !important; }
+      .hero-text { font-size: 30px !important; line-height: 36px !important; }
+      .venue-img { height: 220px !important; }
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #fafaf9; font-family: 'Inter', Arial, Helvetica, sans-serif;">
+
+  <div style="display: none; max-height: 0; overflow: hidden; mso-hide: all;">
+    See you tonight. {{EVENT_TIME}}. {{EVENT_VENUE}}. {{EVENT_ADDRESS_FULL}}.
+  </div>
+
+  <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fafaf9;">
+    <tr>
+      <td align="center" style="padding: 0;">
+
+        <table role="presentation" cellpadding="0" cellspacing="0" width="600" class="container" style="max-width: 600px; width: 100%;">
+
+          <!-- Nav header -->
+          <tr>
+            <td style="background-color: #040078; padding: 16px 32px;">
+              <img src="{{SITE_URL}}/venue/moloco-white.png" alt="Moloco" width="100" style="display: block; opacity: 0.85;">
+            </td>
+          </tr>
+
+          <!-- Hero: evening setting photo -->
+          <!--[if !mso]><!-->
+          <tr>
+            <td class="venue-img" style="background-image: url('{{SITE_URL}}/venue/evening-setting.png'); background-size: cover; background-position: center; height: 260px;" valign="bottom">
+          <!--<![endif]-->
+          <!--[if mso]>
+          <tr>
+            <td style="background-color: #1a1a2e; padding: 48px 40px;">
+          <![endif]-->
+              <div style="background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.1) 100%); padding: 48px 40px 36px;">
+                <p style="color: #60E2B7; font-size: 10px; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 500; margin: 0 0 12px;">Tonight</p>
+                <h1 class="hero-text" style="font-family: 'Playfair Display', Georgia, serif; color: #ffffff; font-size: 34px; line-height: 42px; margin: 0; font-weight: 400;">
+                  See you tonight, {{contact.firstname}}
+                </h1>
+              </div>
+            </td>
+          </tr>
+
+          <!-- The essentials — short and focused -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 36px 40px;">
+
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 24px;">
+                <tr>
+                  <td style="width: 56px; vertical-align: top;" valign="top" width="56">
+                    <p style="color: #b0b0b0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; margin: 0;">Where</p>
+                  </td>
+                  <td>
+                    <p style="color: #1a1a2e; font-size: 15px; font-weight: 400; margin: 0 0 4px;">{{EVENT_VENUE}}, Friedrichstraße 218</p>
+                    <a href="{{MAPS_URL}}" style="color: #0280FB; font-size: 13px; text-decoration: none;">Open in Maps</a>
+                  </td>
+                </tr>
+              </table>
+
+              <div style="border-top: 1px solid #eeeeee; margin-bottom: 24px;"></div>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 24px;">
+                <tr>
+                  <td style="width: 56px; vertical-align: top;" valign="top" width="56">
+                    <p style="color: #b0b0b0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; margin: 0;">When</p>
+                  </td>
+                  <td>
+                    <p style="color: #1a1a2e; font-size: 15px; font-weight: 400; margin: 0;">{{EVENT_TIME}}. Cocktails from the start.</p>
+                  </td>
+                </tr>
+              </table>
+
+              <div style="border-top: 1px solid #eeeeee; margin-bottom: 24px;"></div>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="width: 56px; vertical-align: top;" valign="top" width="56">
+                    <p style="color: #b0b0b0; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; margin: 0;">Door</p>
+                  </td>
+                  <td>
+                    <p style="color: #1a1a2e; font-size: 15px; font-weight: 400; margin: 0;">Show your QR code below, or give your name.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 0 40px;">
+              <div style="border-top: 1px solid #eeeeee;"></div>
+            </td>
+          </tr>
+
+          <!-- QR — prominent for day-of -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 32px 40px 36px; text-align: center;">
+              <div style="padding: 14px; background-color: #ffffff; border: 1px solid #e5e5e5; border-radius: 10px; display: inline-block;">
+                <img src="{{SITE_URL}}/api/qr?email={{contact.email}}&name={{contact.firstname}}" alt="Your personal QR code" width="160" height="160" style="display: block;">
+              </div>
+              <p style="color: #d4d4d4; font-size: 12px; margin: 12px 0 0; font-weight: 300;">
+                or open your <a href="{{SITE_URL}}/welcome?email={{contact.email}}&name={{contact.firstname}}" style="color: #0280FB; text-decoration: none;">welcome page</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #040078; padding: 24px 32px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <img src="{{SITE_URL}}/venue/moloco-white.png" alt="Moloco" width="72" style="display: block; opacity: 0.5;">
+                  </td>
+                  <td style="text-align: right; vertical-align: middle;" valign="middle">
+                    <p style="color: rgba(255,255,255,0.35); font-size: 11px; margin: 0;">Running late? Reply to this email.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Legal -->
+          <tr>
+            <td align="center" style="padding: 20px 40px;">
+              <p style="color: #d4d4d4; font-size: 11px; margin: 0;">
+                <a href="{{unsubscribe_link}}" style="color: #d4d4d4; text-decoration: underline;">Unsubscribe</a>
+                <span style="padding: 0 6px;">·</span>
+                <a href="https://www.moloco.com/privacy" style="color: #d4d4d4; text-decoration: underline;">Privacy</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
